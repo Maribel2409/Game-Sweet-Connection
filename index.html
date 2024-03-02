@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Connection</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+
+  <body>
+    <div class="game-board-container">
+      <div class="board-container"></div>
+    </div>
+
+    <div id="intro-game">
+      <button id="intro-game-btn">START</button>
+    </div>
+
+    <div id="game-over-board" class="hidden">
+      <h1>GAME OVER</h1>
+      <button id="btn-restart" class="btn-restart">RESTART</button>
+    </div>
+
+    <div id="win-board" class="hidden">
+      <h1>¡¡¡YOU WIN!!!</h1>
+      <button class="btn-restart">RESTART</button>
+    </div>
+    <audio id="slide">
+      <source src="./assets/audio/swing.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="music">
+      <source src="./assets/audio/music-sweet.mp3" loop autoplay />
+    </audio>
+
+    <audio id="music-start">
+      <source src="./assets/audio/start.mp3" type="audio/mp3" />
+    </audio>
+
+    <audio id="game-over-laugh">
+      <source src="./assets/audio/game-over-laugh.mp3" type="audio/mp3" />
+    </audio>
+
+    <audio id="win-music">
+      <source src="./assets/audio/win-music.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="./src/utils/utils.js"></script>
+    <script src="./src/LivesCounter.js"></script>
+    <script src="./src/Card.js"></script>
+    <script src="./src/Game.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

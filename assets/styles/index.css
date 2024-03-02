@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+body {
+  margin: 0;
+  font-family: "Kode Mono", monospace;
+}
+.game-board-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("./../img/corazon-morado.jpeg");
+}
+
+.board-container {
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+
+  background-color: rgb(227, 189, 233);
+  position: relative;
+  overflow: hidden;
+}
+#intro-game {
+  background-image: url("./../img/background.jpg");
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 15px;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro-game button {
+  padding: 10px 35px;
+  background-color: rgb(183, 150, 212);
+  border-radius: 15px;
+  border: none;
+  color: #ba1b6bd4;
+  font-size: 40px;
+  font-family: "Kode Mono", monospace;
+  cursor: pointer;
+  position: absolute; 
+  bottom: 70px;
+  transform: translateX(-50%); 
+  left: 50%; 
+}
+#intro-game button:hover {
+  background-color: rgb(221, 162, 222);
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-inner .image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front .image {
+  background-image: url("./../img/back-card.jpeg");
+  border-radius: 8px;
+}
+
+.flip-card-back .image {
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.flip-card.clicked .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #b7b7b8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.timer {
+  font-family: Roboto;
+  position: absolute;
+  margin: 20px;
+  color: #ba1b6bd4;
+}
+
+.info-banner {
+  width: fit-content;
+  padding: 40px;
+  background-color: #b42992eb;
+  opacity: 0.9;
+  color: white;
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.info-banner button {
+  border: navajowhite;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #207d5e;
+  color: white;
+  font-family: "Kode Mono", monospace;
+}
+
+.btn-restart {
+  padding: 10px 35px;
+  background-color: rgb(183, 150, 212);
+  border-radius: 15px;
+  border: none;
+  color: #ba1b6bd4;
+  font-size: 15px;
+  font-weight: medium;
+  cursor: pointer;
+}
+
+.win-board {
+  background-color: rgb(183, 150, 212);
+  padding: 10px 35px;
+  border-radius: 15px;
+  color: #b42992eb;
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000066;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kode Mono", monospace;
+}
+
+.game-over-board {
+  background-color: #5aceab;
+  padding: 10px 35px;
+  border-radius: 15px;
+  display: flex;
+  color: red;
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000066;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kode Mono", monospace;
+}
+
+.hidden {
+  display: none !important;
+}

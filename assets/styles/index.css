@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./../img/corazon-morado.jpeg");
+  background-image: url("./../img/IMG_8712.JPG");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,12 +18,12 @@ body {
   width: 800px;
   height: 500px;
   border-radius: 15px;
-  background-color: rgb(227, 189, 233);
+  background-color: rgb(237, 215, 240, 0.85);
   position: relative;
   overflow: hidden;
 }
 #intro-game {
-  background-image: url("./../img/background.jpg");
+  background-image: url("./../img/background-sweet.jpg");
   background-size: cover; 
   background-position: center; 
   border-radius: 15px;
@@ -40,15 +40,15 @@ body {
 
 #intro-game button {
   padding: 10px 35px;
-  background-color: rgb(183, 150, 212);
+  background-color: rgb(145, 195, 218);
   border-radius: 15px;
   border: none;
-  color: #ba1b6bd4;
+  color: #e67addd4;
   font-size: 40px;
   font-family: "Kode Mono", monospace;
   cursor: pointer;
   position: absolute; 
-  bottom: 70px;
+  bottom: 45px;
   transform: translateX(-50%); 
   left: 50%; 
 }
@@ -139,7 +139,7 @@ body {
   border: navajowhite;
   border-radius: 5px;
   padding: 5px 10px;
-  background-color: #207d5e;
+  background-color:  rgb(32, 125, 94);
   color: white;
   font-family: "Kode Mono", monospace;
 }

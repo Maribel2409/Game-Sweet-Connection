@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./../img/IMG_8712.JPG");
+  background-image: url("./../img/background.JPG");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,8 +24,8 @@ body {
 }
 #intro-game {
   background-image: url("./../img/background-sweet.jpg");
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   border-radius: 15px;
   width: 800px;
   height: 500px;
@@ -47,10 +47,10 @@ body {
   font-size: 40px;
   font-family: "Kode Mono", monospace;
   cursor: pointer;
-  position: absolute; 
+  position: absolute;
   bottom: 45px;
-  transform: translateX(-50%); 
-  left: 50%; 
+  transform: translateX(-50%);
+  left: 50%;
 }
 #intro-game button:hover {
   background-color: rgb(221, 162, 222);
@@ -139,7 +139,7 @@ body {
   border: navajowhite;
   border-radius: 5px;
   padding: 5px 10px;
-  background-color:  rgb(32, 125, 94);
+  background-color: rgb(32, 125, 94);
   color: white;
   font-family: "Kode Mono", monospace;
 }

@@ -8,9 +8,11 @@ window.addEventListener("load", () => {
   btnStart.addEventListener("click", () => {
     game.start();
     introBoard.classList.add("hidden");
-    const music = document.querySelector("#music")
+    const music = document.querySelector("#music");
     music.play();
     const audioStart = new Audio("./assets/audio/start.mp3");
     audioStart.play();
   });
 });
+
+//prueba
